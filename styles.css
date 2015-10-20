@@ -1,0 +1,343 @@
+/* CSS used here will be applied after bootstrap.css */
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+#wrapper.toggled {
+    padding-left: 265px
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 265px;
+    width: 0;
+    height: 100%;
+    height: 100vh;
+    margin-left: -265px;
+    overflow-x: hidden;
+    background: #fff;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 265px
+}
+
+#wrapper.toggled #sidebar-wrapper .sidebar-brand {
+    display: list-item;
+}
+
+#wrapper.toggled #md-navbar-main .navbar-brand {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #wrapper.toggled .navbar-header {
+        float: left;
+    }
+}
+
+#wrapper.toggled #md-navbar-main .navbar-brand {
+    display: none;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 1px
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -265px
+}
+
+.sidebar-nav {
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    width: 265px;
+    list-style: none;
+    background-color: #222;
+    height: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 53px 0 1px;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px
+}
+
+.sidebar-nav li .fa, .sidebar-nav li [class^=icon-] {
+    text-indent: 0
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* display: inline-block; */
+    /* max-width: 200px; */
+}
+
+#sidebar-lists a.sidebar-row span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 200px;
+}
+
+.sidebar-nav li > a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,.2)
+}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 52.5px;
+    font-size: 18px;
+    line-height: 52.5px;
+    border-top: 1px solid white;
+    position: fixed;
+    top: 0px;
+    background-color: #222;
+    width: 265px;
+    z-index: 1000;
+    display: none;
+}
+
+.icon-mdeditor {
+    color: #337ab7
+}
+
+.navbar-inverse .icon-mdeditor:hover {
+    color: #FFFFFF
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: 0 0
+}
+
+@media (min-width: 992px) {
+    #wrapper {
+        padding-left: 265px
+    }
+
+    #wrapper.toggled {
+        padding-left: 0
+    }
+
+    #sidebar-wrapper {
+        width: 265px
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0
+    }
+
+    #page-content-wrapper {
+        position: relative
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0
+    }
+
+    .sidebar-nav > .sidebar-brand {
+        display: list-item;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    #wrapper.toggled #sidebar-wrapper .sidebar-brand {
+        display: none;
+    }
+
+    #wrapper.toggled #md-navbar-main .navbar-brand {
+        display: inline-block;
+    }
+}
+
+#sidebar-lists .panel-group {
+    margin: 0 0 15px 0;
+    background-color: #000;
+    border-bottom: 1px solid #ddd
+}
+
+#sidebar-lists .panel-group .panel {
+    border: 0;
+    border-top: 1px solid #fff;
+    border-radius: 0;
+    margin-top: 0
+}
+
+#sidebar-lists .panel-group .panel .btn {
+    text-indent: 0;
+    color: #FFF;
+    margin: 8px
+}
+
+#sidebar-lists .panel-group .panel-heading {
+    padding: 0
+}
+
+#sidebar-lists .panel-group .panel-heading .panel-title a {
+    line-height: 40px;
+    color: #FFF
+}
+
+#sidebar-lists .panel-group .panel-heading .panel-title a:hover {
+    color: #5bc0de
+}
+
+#sidebar-lists .list-group {
+    border-right: 1px solid #ddd;
+    border-top: 0
+}
+
+#sidebar-lists .list-group .list-group-item {
+    line-height: 40px;
+    padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#sidebar-lists .list-group .list-group-item .sidebar-row:hover {
+    color: #337ab7
+}
+
+#menu-toggle {
+    margin-right: 1em;
+    color: #fff;
+    background-color: #000
+}
+
+#menu-toggle:hover {
+    background-color: #222
+}
+
+.message {
+    padding: 15px
+}
+
+@font-face {
+    font-family: mdeditor;
+    src: url(../fonts/mdeditor.eot?70673711);
+    src: url(../fonts/mdeditor.eot?70673711#iefix) format('embedded-opentype'), url(../fonts/mdeditor.woff?70673711) format('woff'), url(../fonts/mdeditor.ttf?70673711) format('truetype'), url(../fonts/mdeditor.svg?70673711#mdeditor) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+[class*=" icon-"]:before, [class^=icon-]:before {
+    font-family: mdeditor;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em
+}
+
+.icon-mdeditor:before {
+    content: '\e804'
+}
+
+#wrapper .hint--info.hint--bottom:before {
+    border-bottom-color: #337ab7
+}
+
+#wrapper .hint--info:after {
+    background-color: #337ab7
+}
+
+#tool-navbar [data-hint]:after {
+    white-space: normal
+}
+
+body.relative {
+    position: relative
+}
+
+#nav-stacked {
+    position: fixed
+}
+
+#nav-stacked li > a:focus {
+    background-color: inherit
+}
+
+#nav-stacked li.active > a {
+    background-color: #337ab7
+}
+
+#nav-stacked li > a > span {
+    display: block;
+    padding: 10px 15px
+}
+
+#nav-stacked li > a.no-padding {
+    padding: 0
+}
+#md-navbars .navbar {
+    border-radius: 0
+}
+#md-navbar-main {
+    margin-bottom: 1px;
+}
+#md-navbar-secondary {
+    background-color: #F0F8FF;
+    max-height: 40px;
+    overflow: hidden;
+}
+.navbar form label {
+    font-weight: 500;
+    margin-right: 7px;
+    float: none;
+    padding-top: 0 !important;
+    margin-top: 0;
+}
+#md-navbars {
+    position: fixed;
+    top: 1px;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+}
+
+#page-content {
+    padding-top: 100px;
+}
