@@ -99,7 +99,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     display: inline-block;
-    max-width: 200px;
+    max-width: 195px;
+    vertical-align: middle;
 }
 
 .sidebar-nav li > a:hover {
@@ -142,6 +143,15 @@
     background: 0 0
 }
 
+@media (min-width: 768px) {
+    #wrapper #md-navbar-main .navbar-brand {
+        margin-left: 0;
+    }
+
+    #navbar-main-collapse, #md-navbar-main .container-fluid {
+        padding-left: 0;
+    }
+}
 @media (min-width: 992px) {
     #wrapper {
         padding-left: 265px
@@ -201,7 +211,11 @@
 #sidebar-lists .panel-group .panel .btn {
     text-indent: 0;
     color: #FFF;
-    margin: 8px
+    margin: 8px 1px 8px 0;
+    min-width: 25px;
+}
+#sidebar-lists .panel-group .panel .btn-group {
+    margin-right: 8px;
 }
 
 #sidebar-lists .panel-group .panel-heading {
@@ -318,6 +332,15 @@ body.relative {
 #md-navbar-main {
     margin-bottom: 1px;
 }
+#md-navbar-main .navbar-form {
+    margin: 0;
+    padding: 11px;
+}
+#md-navbar-main .navbar-form .form-control {
+    height: 28px;
+    font-size: 13px;
+    padding: 4px;
+}
 #md-navbar-secondary {
     background-color: #F0F8FF;
     max-height: 40px;
@@ -339,7 +362,7 @@ body.relative {
 }
 
 #page-content {
-    padding-top: 100px;
+    padding-top: 136px;
     display: none
 }
 .navbar .divider-vertical {
@@ -361,4 +384,8 @@ body.relative {
 }
 .navbar-brand {
     padding-right: 0
+}
+.breadcrumb {
+    margin-bottom: 0;
+    height: 36px;
 }
