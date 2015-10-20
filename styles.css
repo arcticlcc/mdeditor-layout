@@ -1,7 +1,4 @@
 /* CSS used here will be applied after bootstrap.css */
-body {
-    display: none;
-}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all .5s ease;
@@ -55,7 +52,7 @@ body {
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 1px
+    padding: 1px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -343,4 +340,5 @@ body.relative {
 
 #page-content {
     padding-top: 100px;
+    display: none
 }

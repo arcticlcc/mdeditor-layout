@@ -137,5 +137,5 @@ $(function() {
     //console.info(options);
   }/*, 50)*/);
 
-  $('body').show(1000);
+  $('#page-content').fadeIn(1000);
 });
