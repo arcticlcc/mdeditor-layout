@@ -1,6 +1,8 @@
 $(function() {
   $('#md-navbar-main .navbar-brand, .sidebar-brand').click(function() {
     $('#wrapper').toggleClass('toggled');
+    //hack to force reflow
+    $('#navbar-main-collapse ul').hide().show(0);
   });
 
   //https://github.com/tomiford/bootstrap-overflow-navs
