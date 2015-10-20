@@ -52,7 +52,7 @@
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 1px;
+    padding: 0 1px 1px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -202,13 +202,20 @@
 }
 
 #sidebar-lists .panel-group .panel .btn {
+    border-radius: 0;
     text-indent: 0;
     color: #FFF;
-    margin: 8px 1px 8px 0;
-    min-width: 25px;
+    margin: 0px 1px 0px 0;
+    width: 36px;
+    height: 40px;
+    padding: 9px;
+    font-size: 16px;
 }
 #sidebar-lists .panel-group .panel .btn-group {
-    margin-right: 8px;
+    margin-right: -1px;
+    padding: 0;
+    border-radius: 0;
+    background-color: #FFFFFF;
 }
 
 #sidebar-lists .panel-group .panel-heading {
@@ -225,7 +232,7 @@
 }
 
 #sidebar-lists .list-group {
-    border-right: 1px solid #ddd;
+    /* border-right: 1px solid #ddd; */
     border-top: 0
 }
 
@@ -234,7 +241,11 @@
     padding: 0;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+}
+
+#sidebar-lists .list-group .list-group-item:hover {
+    background-color: #F0F8FF;
 }
 
 #sidebar-lists .list-group .list-group-item .sidebar-row:hover {
@@ -348,10 +359,11 @@ body.relative {
 }
 #md-navbars {
     position: fixed;
-    top: 1px;
+    top: 0;
+    border-top: 1px solid #fff;
     z-index: 100;
     width: 100%;
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 #page-content {
