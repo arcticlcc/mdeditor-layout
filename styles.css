@@ -251,7 +251,7 @@
 @font-face {
     font-family: mdeditor;
     src: url(./fonts/mdeditor.eot?70673711);
-    src: url(./fonts/mdeditor.eot?70673711#iefix) format('embedded-opentype'), url(../fonts/mdeditor.woff?70673711) format('woff'), url(../fonts/mdeditor.ttf?70673711) format('truetype'), url(../fonts/mdeditor.svg?70673711#mdeditor) format('svg');
+    src: url(./fonts/mdeditor.eot?70673711#iefix) format('embedded-opentype'), url(./fonts/mdeditor.woff?70673711) format('woff'), url(./fonts/mdeditor.ttf?70673711) format('truetype'), url(./fonts/mdeditor.svg?70673711#mdeditor) format('svg');
     font-weight: 400;
     font-style: normal
 }
