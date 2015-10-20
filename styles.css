@@ -90,17 +90,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    /* display: inline-block; */
-    /* max-width: 200px; */
 }
 
-#sidebar-lists a.sidebar-row span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: inline-block;
-    max-width: 195px;
-    vertical-align: middle;
+#sidebar-lists a.sidebar-row {
+    max-width: 220px;
 }
 
 .sidebar-nav li > a:hover {
