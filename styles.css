@@ -321,7 +321,7 @@ body.relative {
 #md-navbar-secondary {
     background-color: #F0F8FF;
     max-height: 40px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .navbar form label {
     font-weight: 500;
