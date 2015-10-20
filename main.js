@@ -137,4 +137,5 @@ $(function() {
     //console.info(options);
   }/*, 50)*/);
 
+  $('body').show(1000);
 });

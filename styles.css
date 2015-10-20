@@ -1,4 +1,7 @@
 /* CSS used here will be applied after bootstrap.css */
+body {
+    display: none;
+}
 #wrapper {
     padding-left: 0;
     -webkit-transition: all .5s ease;
