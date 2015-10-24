@@ -308,7 +308,7 @@ body.relative {
     margin: 0;
     padding: 11px;
 }
-#md-navbar-main .navbar-form .form-control {
+#md-navbar-main .navbar-form .form-control, #md-navbar-main .navbar-form .bootstrap-select button {
     font-size: 13px;
     height: 28px;
     padding: 4px;

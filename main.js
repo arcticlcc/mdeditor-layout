@@ -9,6 +9,16 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
+  //setup bootstrap-select
+  $('.selectpicker').selectpicker({
+    iconBase : 'fa',
+    tickIcon : 'fa-check'
+  });
+
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    $('.selectpicker').selectpicker('mobile');
+  }
+
   //fix scrollspy links
   //http://stackoverflow.com/a/28292699
   $("#md-scrollspy li a[href^='#']").on('click', function(event) {
