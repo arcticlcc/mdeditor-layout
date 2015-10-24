@@ -5,6 +5,10 @@ $(function() {
     $('#navbar-main-collapse ul').hide().show(0);
   });
 
+  $(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
   //https://github.com/tomiford/bootstrap-overflow-navs
   /**
    * options:
@@ -132,7 +136,8 @@ $(function() {
 
   $('#md-navbar-secondary').overflowNavs(options);
 
-  $(window).resize(/*$.fn.debouncer(*/function() {
+  $(window).resize(/*$.fn.debouncer(*/
+  function() {
     $('#md-navbar-secondary').overflowNavs(options);
     //console.info(options);
   }/*, 50)*/);
