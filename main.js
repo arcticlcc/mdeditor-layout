@@ -9,6 +9,24 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
+  //fix scrollspy links
+  //http://stackoverflow.com/a/28292699
+  $("#md-scrollspy li a[href^='#']").on('click', function(event) {
+    var target;
+    target = this.hash;
+
+    event.preventDefault();
+
+    var navOffset;
+    navOffset = $('#navbar').height() + 160;
+
+    return $('html, body').animate({
+      scrollTop : $(this.hash).offset().top - navOffset
+    }, 300, function() {
+      return window.history.pushState(null, null, target);
+    });
+  });
+
   //https://github.com/tomiford/bootstrap-overflow-navs
   /**
    * options:
