@@ -334,7 +334,7 @@ body.relative {
 }
 #page-content {
     display: none;
-    padding-top: 136px;
+    padding-top: 150px;
 }
 .navbar .divider-vertical {
     border-left: 1px solid #f2f2f2;
@@ -419,4 +419,28 @@ div#navbar-main-collapse .tooltip {
     div#navbar-main-collapse li .tooltip {
         display: block !important;
     }
+}
+
+#page-content fieldset {
+    margin-bottom: 30px;
+}
+
+#page-content fieldset .collapse {
+    padding: 15px 0px 10px;
+    background-color: rgb(240, 248, 255);
+}
+
+#page-content legend {
+    margin-bottom: 0;
+}
+
+#page-content legend a {
+    text-decoration: none;
+}
+#page-content legend a.collapsed span:before {
+    content: "\f107";
+}
+
+#md-scrollspy ul{
+    position: fixed;
 }
