@@ -421,6 +421,7 @@ div#navbar-main-collapse .tooltip {
     }
 }
 
+
 #page-content fieldset {
     margin-bottom: 30px;
 }
@@ -430,6 +431,12 @@ div#navbar-main-collapse .tooltip {
     background-color: rgb(240, 248, 255);
 }
 
+@media (max-width: 991px) {
+
+    #page-content fieldset .collapse {
+        padding: 15px 15px 10px;
+    }
+}
 #page-content legend {
     margin-bottom: 0;
 }
@@ -441,11 +448,11 @@ div#navbar-main-collapse .tooltip {
     content: "\f107";
 }
 
-#md-scrollspy ul{
+#md-scrollspy ul {
     position: fixed;
 }
 
-.nav>li>a:focus {
+.nav > li > a:focus {
     background-color: inherit;
     color: #337AB7;
 }
