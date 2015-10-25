@@ -1,13 +1,18 @@
 $(function() {
-  $('#md-navbar-main .navbar-brand, .sidebar-brand').click(function() {
+  $('#md-navbar-main .navbar-brand, .sidebar-brand>.sidebar-brand-link').click(function() {
     $('#wrapper').toggleClass('toggled');
     //hack to force reflow
     $('#navbar-main-collapse ul').hide().show(0);
   });
 
-  $(function() {
-    $('[data-toggle="tooltip"]').tooltip()
+  $('#md-btn-help').click(function() {
+    var sw = $('#sidebar-wrapper');
+
+    $('#md-help').fadeToggle();
+    sw.toggleClass('help');
   });
+
+  $('[data-toggle="tooltip"]').tooltip();
 
   //setup bootstrap-select
   $('.selectpicker').selectpicker({
