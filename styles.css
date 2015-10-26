@@ -314,7 +314,7 @@ body.relative {
     padding: 4px;
 }
 #md-navbar-secondary {
-    background-color: #f0f8ff;
+    background-color: #F5F5F5;
     max-height: 40px;
 }
 .navbar form label {
@@ -407,6 +407,7 @@ body.relative {
 .breadcrumb {
     font-size: 12px;
     margin-bottom: 0;
+    background-color: #F0F8FF;
 }
 
 /*Responsive navbar tooltips*/
@@ -487,4 +488,23 @@ section#md-help .page-header h3 {
 }
 #sidebar-wrapper.help a#md-btn-help:hover {
     color: #fff;
+}
+.tour-tour.popover {
+    background-color: #F0FFF0;
+}
+.tour-tour .popover-title {
+    background-color: #449d44;
+    color: #FFFFFF;
+}
+.tour-tour.popover.bottom > .arrow:after {
+    border-bottom-color: #F0FFF0;
+}
+.tour-tour.popover.top > .arrow:after {
+    border-top-color: #F0FFF0;
+}
+.tour-tour.popover.left > .arrow:after {
+    border-left-color: #F0FFF0;
+}
+.tour-tour.popover.right > .arrow:after {
+    border-right-color: #F0FFF0;
 }

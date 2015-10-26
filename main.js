@@ -175,5 +175,56 @@ $(function() {
     //console.info(options);
   }/*, 50)*/);
 
+  //tour
+  // Instance the tour
+  var tour = new Tour({
+    steps : [{
+      orphan : true,
+      title : "Welcome!",
+      backdrop : true,
+      content : 'Click <b>Next</b> to take the tour. Use the buttons or <span class="fa fa-long-arrow-left"></span> <span class="fa fa-long-arrow-right"></span> arrow keys to navigate the tour. You can resume the tour from the <em>Help</em> section.'
+    }, {
+      element : "#md-navbar-main .nav",
+      title : "Main NavBar",
+      content : "This is the main navigation/tool bar.",
+
+      placement : 'bottom'
+    }, {
+      element : ".navbar-brand",
+      title : "Toggle SideBar",
+      content : "Click the logo to open the SideBar.",
+      onNext : function(tour) {
+        if (!$('.sidebar-brand').is(':visible')) {
+          $('.navbar-brand').click();
+        }
+      }
+    }, {
+      element : ".sidebar-brand .sidebar-brand-link",
+      title : "Toggle SideBar",
+      content : "Click the logo to hide the SideBar."
+    }, {
+      element : "#md-btn-help",
+      title : "Toggle Help",
+      content : 'Click the <span class="fa fa-question-circle"></span> to toggle the Help section.'
+    }, {
+      orphan : true,
+      title : "All Good Things...",
+      backdrop : true,
+      content : "That's it for the demo tour. You can restart it from the <em>Help</em> section."
+    }]
+  });
+
+  $('#md-btn-tour').click(function() {
+    if (tour._options.steps.length !== tour.getCurrentStep() + 1) {
+      tour.start(true);
+    } else {
+      tour.restart();
+    }
+  });
+
   $('#page-content').fadeIn(1000);
+
+  // Initialize the tour
+  tour.init();
+  tour.start();
 });
